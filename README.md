@@ -32,4 +32,4 @@
 
 ### Admin interface 
 
-![alt](https://res.cloudinary.com/devatchannel/image/upload/v1599568148/test/2_obw2r7.png)
+![Capture2](https://user-images.githubusercontent.com/74122938/159772885-ea4c23a3-375b-445c-96c0-406ba97a07a6.PNG)
