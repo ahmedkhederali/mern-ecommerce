@@ -1,0 +1,20 @@
+Cross-site scripting attacks (XSS) :
+ These attacks rely on client-side JavaScript being injected into 
+ the front-end of your application and then accessing cookies via 
+ the browser's JavaScript cookies API.
+
+
+Man-in-the-middle attacks :
+ These attacks occur when a request is in-flight (traveling from the 
+ browser to the server) and the server does not have an HTTPS connection (no SSL).
+
+
+Cross-site tracing attacks (XST) :
+ In the HTTP protocol, an HTTP method called TRACE exists which allows attackers to
+  send a request to a server (and obtain its cookies) while bypassing any security. 
+  While modern browsers generally make this irrelevant due to disabling of the TRACE method, 
+  it's still good to be aware of and guard against for added security.
+
+
+  auth ==> to check if your have token or not 
+  authAdmin ==> to check if this admin or not 

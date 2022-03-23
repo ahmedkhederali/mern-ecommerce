@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  max-width: 1230px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-shadow: 0 0 35px #eee;
+}
+a{
+  text-decoration: none;
+}
+ul li{
+  list-style: none;
+}
+button{
+  border:none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+
+/*-------------------HEADER--------------------*/
+@import url('./components/header/header.css'); /* first way i know this way */
+
+
+/*-------------------Product--------------------*/
+@import url('./components/mainPage/products/products.css'); 
+
+/*-------------------Details Product--------------------*/
+@import url('./components/mainPage/details/detailsProduct.css'); 
+/*-------------------Login /Regisetr User------------------------*/
+@import url('./components/mainPage/auth/login.css');
+
+/*-------------------Cart-------------------------*/
+@import url('./components//mainPage/cart/cart.css');
+
+/*------------------------history--------------------------*/
+@import url('./components/mainPage/history/history.css');
+
+/*--------------------------Category----------------------*/
+@import url('./components/mainPage/categories/category.css');
+
+/*-----------------------create product--------------------*/
+@import url('./components/mainPage/createProduct/createProduct.css');
+
+/*--------------------RESPONSIVE --------------------------*/
+@media (max-width:820px) {
+  header .logo{
+    min-width: 115px;
+    flex: none;
+  }
+  header ul{
+    padding: 10px 0;
+  }
+}
+
+@media (max-width:720px) {
+  
+  header ul{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    transition: 0.5s ease-in;
+  }
+  header .meun{
+    display: block;
+    cursor: pointer;
+  }
+  header ul li .meun{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+  }
+  header{
+    justify-content: space-between;
+  }
+
+}
+@media (min-width:430px )and ( max-width:640px) {
+  .product-card{margin: auto;}
+}
+@media (max-width:580px){
+.filter_menu .row span{
+  display: none;
+}
+}
+@media (max-width:500px){
+  .App{
+    padding: 0 10px;
+  }
+  .details{
+    font-size: 100%;
+    padding: 0;
+  }
+  .filter_menu input{
+    margin: 0;
+  }
+  .filter_menu .sort{
+    flex: 1;
+  }
+  .filter_menu .sort select{
+    width: 100%;
+    min-width: 290px;
+    margin: 5px 0;
+  }
+  .login-page{
+    padding: 30px 15px;
+  }
+  .delete_All{
+    margin: 20px 0;
+  }
+  .create_product .upload {
+    margin: 0;
+  }
+ 
+}
+@media (max-width:415px) {
+  .meun img {
+    left: 20px;
+    top: 15px;
+    position: absolute;
+  }
+  
+}
+@media (max-width:330px){
+  .App{
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  .details{
+    font-size: 100%;
+    padding: 0;
+  }
+  .details .box-detail{
+    font-size: 10px;
+  }
+  .create_product form .row {
+    margin: 15px;
+  }
+ 
+}
+@media (max-width:280px ){
+
+  .product-card{
+    max-width: 280px;
+    overflow: hidden;
+    height: 580px;
+    padding: 15px;
+    box-shadow: 0 0 15px #ddd;
+    margin: 10px 0;
+    position: relative;
+    
+}
+.product-card img{
+  width: 100%;
+  height: 350px;
+  display: block;
+  object-fit: cover;
+}
+
+}
+@media (max-width:270px ){
+  .delete_All{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .delete_All  span{
+    font-size: 11px;
+  }
+  .delete_All  input{
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    transform: translateY(2px);
+  }
+  .delete_All  button{
+    border: 1px solid crimson;
+    padding: 4px 15px;
+    font-weight: 400;
+  }
+  .create_product form .row {
+    margin: 25px;
+  }
+}
+
