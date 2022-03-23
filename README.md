@@ -28,7 +28,7 @@
 
 ### User interface 
 
-![alt](https://res.cloudinary.com/devatchannel/image/upload/v1599568147/test/1_pe9ism.png)
+![Capture](https://user-images.githubusercontent.com/74122938/159772749-b047c082-1171-4bd7-830d-68f7705c18e0.PNG)
 
 ### Admin interface 
 
